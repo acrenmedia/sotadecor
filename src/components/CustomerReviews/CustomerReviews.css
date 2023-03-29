@@ -1,0 +1,15 @@
+.review-card {
+  min-height: 500px;
+}
+
+.review-btn {
+  display: block;
+  width: 100%;
+  background-color: #000000;
+  color: #ffffff;
+  transition: 0.25s;
+}
+
+.review-btn:hover {
+  color: #ffffff;
+}

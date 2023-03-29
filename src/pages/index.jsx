@@ -1,0 +1,191 @@
+import * as React from "react";
+import Layout from "../components/Layout";
+import { Carousel } from "react-bootstrap";
+import { Link } from "gatsby";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faChevronCircleRight } from "@fortawesome/free-solid-svg-icons";
+import "./styles/index.css";
+import IMG1 from "../assets/images/index/IMG_5117.jpeg";
+import IMG2 from "../assets/images/index/IMG_5119.jpeg";
+import IMG3 from "../assets/images/index/IMG_5120.jpeg";
+import IMG4 from "../assets/images/index/IMG_5136.jpeg";
+import IMG5 from "../assets/images/index/IMG_5130.jpeg";
+import IMG6 from "../assets/images/index/IMG_5131.jpeg";
+import IMG7 from "../assets/images/index/IMG_5138.jpeg";
+import CustomerReviews from "../components/CustomerReviews/CustomerReviews";
+
+export default function Home() {
+  return (
+    <Layout>
+      <div className="row m-0 hero">
+        <div className="col-lg-7 p-0">
+          <Carousel fade>
+            <Carousel.Item>
+              <img
+                className="d-block w-100 carousel-img"
+                src={IMG1}
+                alt="First slide"
+              />
+            </Carousel.Item>
+            <Carousel.Item>
+              <img
+                className="d-block w-100 carousel-img"
+                src={IMG2}
+                alt="Second slide"
+              />
+            </Carousel.Item>
+            <Carousel.Item>
+              <img
+                className="d-block w-100 carousel-img"
+                src={IMG3}
+                alt="Third slide"
+              />
+            </Carousel.Item>
+          </Carousel>
+        </div>
+        <div className="col-lg-5 d-flex justify-content-center flex-column consult">
+          <div className="consult__head text-center">
+            <h3>FREE CONSULTATION</h3>
+            <span>Schedule your free consultation today!</span>
+          </div>
+          <div className="divider"></div>
+          <form className="consult__form">
+            <div className="name-group">
+              <div className="input-field">
+                <label htmlFor="first-name">First Name*</label>
+                <input name="first-name" type="text" />
+              </div>
+              <div className="input-field">
+                <label htmlFor="last-name">Last Name*</label>
+                <input name="last-name" type="text" />
+              </div>
+            </div>
+            <div className="input-field">
+              <label htmlFor="phone-number">Phone Number*</label>
+              <input name="phone-number" type="text" />
+            </div>
+            <div className="input-field">
+              <label htmlFor="email-address">Email Address*</label>
+              <input name="email-address" type="text" />
+            </div>
+            <div className="input-field">
+              <label htmlFor="project-zip">Project Zip Code*</label>
+              <input name="project-zip" type="text" />
+            </div>
+            <div className="input-field">
+              <label htmlFor="message">Message*</label>
+              <textarea name="message" cols="30" rows="5"></textarea>
+            </div>
+            <button className="button consult__btn" type="submit">
+              SCHEDULE NOW
+            </button>
+          </form>
+        </div>
+      </div>
+
+      <div className="row m-0 section section--dark">
+        <div className="col-lg-4 d-flex justify-content-center align-items-center p-0">
+          <img
+            src={IMG4}
+            width="100%"
+            height="100%"
+            alt="Plantation Shutters"
+          />
+        </div>
+        <div className="col-lg-8 d-flex flex-column justify-content-center">
+          <div className="section__desc">
+            <h2>WHO WE ARE</h2>
+            <span className="section__name">SOTA Window Coverings</span>
+            <p>
+              We are a small, family owned business that provides professional
+              window treatment services for homes and businesses in Delray Beach
+              and surrounding areas. For over 15 years, we have been committed
+              to providing the best service possible.
+            </p>
+            <Link className="button button--light" to="/gallerys">
+              SEE GALLERY
+            </Link>
+          </div>
+        </div>
+      </div>
+
+      <div className="row m-0 section section--light">
+        <div className="col-lg-8 d-flex flex-column justify-content-center order-2">
+          <div className="section__desc">
+            <h2>WE'VE GOT YOU COVERED</h2>
+            <span className="section__name">Licensed & Insured</span>
+            <p>
+              Get your windows done with confidence as we are fully licensed and
+              insured. Our specializations include Plantation Shutters (Wood and
+              Poly), Solar Shades, Horizontal Shades, Verticals, and
+              Motorization.
+            </p>
+            <Link className="button button--dark" to="/gallerys">
+              SEE GALLERY
+            </Link>
+          </div>
+        </div>
+        <div className="col-lg-4 d-flex justify-content-center align-items-center p-0">
+          <img
+            src={IMG4}
+            width="100%"
+            height="100%"
+            alt="Plantation Shutters"
+          />
+        </div>
+      </div>
+
+      <div className="row m-0">
+        <div className="col-lg-4 p-0">
+          <img className="banner-img" src={IMG5} alt="Plantation Shutters" />
+        </div>
+        <div className="col-lg-4 p-0">
+          <img className="banner-img" src={IMG6} alt="Plantation Shutters" />
+        </div>
+        <div className="col-lg-4 p-0">
+          <img className="banner-img" src={IMG7} alt="Plantation Shutters" />
+        </div>
+      </div>
+
+      <div className="row m-0 services">
+        <div className="col-lg-12">
+          <div className="container">
+            <h2 className="text-center p-4">Services</h2>
+            <div className="row m-0">
+              <div className="col-lg-12 p-0 services-img plantationshutters">
+                <Link to="/gallery/plantationshutters">
+                  <h3>Plantation Shutters</h3>
+                  <span>
+                    Learn More <FontAwesomeIcon icon={faChevronCircleRight} />
+                  </span>
+                </Link>
+              </div>
+            </div>
+            <div className="row m-0">
+              <div className="col-lg-12 p-0 services-img solarshades">
+                <Link to="/gallery/solarshades">
+                  <h3>Solar Shades</h3>
+                  <span>
+                    Learn More <FontAwesomeIcon icon={faChevronCircleRight} />
+                  </span>
+                </Link>
+              </div>
+            </div>
+            <div className="row m-0">
+              <div className="col-lg-12 p-0 services-img motorization">
+                <Link to="/gallery/motorization">
+                  <h3>Motorization</h3>
+                  <span>
+                    Learn More <FontAwesomeIcon icon={faChevronCircleRight} />
+                  </span>
+                </Link>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <CustomerReviews />
+    </Layout>
+  );
+}

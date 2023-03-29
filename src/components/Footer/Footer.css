@@ -1,0 +1,29 @@
+.footer {
+  background-image: url("./footer-image.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  min-height: 400px;
+  display: flex;
+  align-items: center;
+  padding: 2rem;
+}
+
+.footer h3 {
+    letter-spacing: 5px;
+}
+
+.footer span {
+    font-size: 14px;
+    margin: 5px 0;
+}
+
+.footer a {
+    color: #ffffff;
+    transition: 0.25s;
+}
+
+.footer a:hover {
+  color: #000000;
+}

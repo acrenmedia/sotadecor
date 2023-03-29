@@ -1,0 +1,121 @@
+.sota-nav {
+  background-color: #ffffff;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 200;
+  display: flex;
+  align-items: center;
+  height: 100px;
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.15);
+}
+
+.sota-nav__logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sota-nav__logo img {
+  width: 90px;
+}
+
+.sota-nav__logo span {
+  text-align: center;
+  font-family: "Bellefair", sans-serif;
+  font-size: 0.675rem;
+  color: #000000;
+  white-space: nowrap;
+}
+
+.sota-nav__links {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex: auto;
+}
+.sota-nav__links a {
+  color: rgba(0, 0, 0, 0.5);
+  padding: 5px;
+  margin: 0 10px;
+  transition: 0.25s;
+}
+
+.sota-nav__links a:hover {
+  color: #000000;
+}
+
+.sota-nav__hamburger {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin: 10px;
+  padding: 0;
+}
+
+.sota-nav__hamburger div,
+.sota-nav__hamburger::before,
+.sota-nav__hamburger::after {
+  transition: 0.45s;
+  content: "";
+  background-color: #a5a5a5;
+  height: 3px;
+  width: 2rem;
+  border-radius: 5px;
+  margin: 3px 0px;
+}
+
+.sota-nav__hamburger--active::before {
+  transform: rotate(-45deg) translate(-4px, 4px);
+}
+
+.sota-nav__hamburger--active::after {
+  transform: rotate(45deg) translate(-2px, -3px);
+}
+
+.sota-nav__hamburger--active div {
+  display: none;
+}
+
+.mobile-menu {
+  position: fixed;
+  left: 0;
+  top: -256px;
+  width: 100%;
+  background-color: #ffffff;
+  z-index: 100;
+  transition: 0.45s;
+}
+
+.mobile-menu--active {
+  top: 100px;
+}
+
+.mobile-menu__links a {
+  color: rgba(0, 0, 0, 0.5);
+  padding: 20px 15px;
+  transition: 0.45s ease-in-out;
+}
+
+.mobile-menu__links a:hover {
+  color: #000000;
+}
+
+@media (max-width: 991px) {
+  .sota-nav {
+    padding-left: 52px;
+  }
+  .sota-nav__links a {
+    display: none;
+  }
+  .sota-nav__logo {
+    display: flex !important;
+    flex-direction: column;
+  }
+  .sota-nav__hamburger {
+    display: flex;
+    flex-direction: column;
+  }
+}
