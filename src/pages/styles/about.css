@@ -1,0 +1,24 @@
+.areas ul {
+  padding: 15px 15px;
+  margin: 0;
+}
+
+.areas ul:nth-child(1) {
+  padding-left: 0;
+}
+
+.areas ul li {
+  list-style-type: none;
+  margin: 5px 0;
+}
+
+@media (max-width: 991px) {
+  .areas {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .areas ul:nth-child(1) {
+    padding-left: 15px;
+  }
+}

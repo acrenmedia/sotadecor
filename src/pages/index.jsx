@@ -12,7 +12,6 @@ import IMG4 from "../assets/images/index/IMG_5136.jpeg";
 import IMG5 from "../assets/images/index/IMG_5130.jpeg";
 import IMG6 from "../assets/images/index/IMG_5131.jpeg";
 import IMG7 from "../assets/images/index/IMG_5138.jpeg";
-import CustomerReviews from "../components/CustomerReviews/CustomerReviews";
 
 export default function Home() {
   return (
@@ -102,7 +101,7 @@ export default function Home() {
               and surrounding areas. For over 15 years, we have been committed
               to providing the best service possible.
             </p>
-            <Link className="button button--light" to="/gallerys">
+            <Link className="button button--light" to="/gallery">
               SEE GALLERY
             </Link>
           </div>
@@ -120,7 +119,7 @@ export default function Home() {
               Poly), Solar Shades, Horizontal Shades, Verticals, and
               Motorization.
             </p>
-            <Link className="button button--dark" to="/gallerys">
+            <Link className="button button--dark" to="/gallery">
               SEE GALLERY
             </Link>
           </div>
@@ -184,8 +183,6 @@ export default function Home() {
           </div>
         </div>
       </div>
-
-      <CustomerReviews />
     </Layout>
   );
 }
