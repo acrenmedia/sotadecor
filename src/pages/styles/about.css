@@ -1,3 +1,7 @@
+.areas {
+  justify-content: space-between;
+}
+
 .areas ul {
   padding: 15px 15px;
   margin: 0;
