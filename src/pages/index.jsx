@@ -100,7 +100,7 @@ export default function Home() {
               and surrounding areas. For over 15 years, we have been committed
               to providing the best service possible.
             </p>
-            <Link className="button button--light" to="/gallery">
+            <Link className="button button--dark" to="/gallery">
               SEE GALLERY
             </Link>
           </div>
@@ -118,7 +118,7 @@ export default function Home() {
               Poly), Solar Shades, Horizontal Shades, Verticals, and
               Motorization.
             </p>
-            <Link className="button button--dark" to="/gallery">
+            <Link className="button button--light" to="/gallery">
               SEE GALLERY
             </Link>
           </div>

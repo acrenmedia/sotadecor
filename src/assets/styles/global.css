@@ -28,19 +28,27 @@ body {
   color: unset;
 }
 
-.button--light {
-  background: transparent;
+.button--dark {
+  background: #000000;
   padding: 15px 25px;
   border-radius: 10px;
   border: 1px solid #ffffff;
   color: #ffffff;
 }
 
-.button--dark {
-  background: transparent;
+.button--dark:hover {
+  color: #ffffff;
+}
+
+.button--light {
+  background: #ffffff;
   padding: 15px 25px;
   border-radius: 10px;
   border: 1px solid #000000;
+  color: #000000;
+}
+
+.button--light:hover {
   color: #000000;
 }
 

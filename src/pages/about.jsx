@@ -27,7 +27,7 @@ export default function About() {
               and surrounding areas. For over 15 years, we have been committed
               to providing the best service possible.
             </p>
-            <Link className="button button--light" to="/gallery">
+            <Link className="button button--dark" to="/gallery">
               SEE GALLERY
             </Link>
           </div>
