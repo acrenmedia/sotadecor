@@ -1,7 +1,7 @@
 import { Link } from "gatsby";
 import React from "react";
 import Layout from "../components/Layout";
-import IMG1 from "../assets/images/index/IMG_5136.jpeg";
+import IMG1 from "../assets/images/global/IMG_5136.jpeg";
 import IMG2 from "../assets/images/about/IMG_5137.jpeg";
 import "./styles/about.css";
 

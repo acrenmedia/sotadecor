@@ -6,10 +6,11 @@ import "./styles/index.css";
 import IMG1 from "../assets/images/index/IMG_5117.jpeg";
 import IMG2 from "../assets/images/index/IMG_5119.jpeg";
 import IMG3 from "../assets/images/index/IMG_5120.jpeg";
-import IMG4 from "../assets/images/index/IMG_5136.jpeg";
-import IMG5 from "../assets/images/index/IMG_5130.jpeg";
-import IMG6 from "../assets/images/index/IMG_5131.jpeg";
-import IMG7 from "../assets/images/index/IMG_5138.jpeg";
+import IMG4 from "../assets/images/global/IMG_5136.jpeg";
+import IMG5 from "../assets/images/index/IMG_5161.jpeg";
+import IMG6 from "../assets/images/index/IMG_5130.jpeg";
+import IMG7 from "../assets/images/index/IMG_5131.jpeg";
+import IMG8 from "../assets/images/index/IMG_5138.jpeg";
 import Services from "../components/Services/Services";
 
 export default function Home() {
@@ -125,7 +126,7 @@ export default function Home() {
         </div>
         <div className="col-lg-4 d-flex justify-content-center align-items-center p-0">
           <img
-            src={IMG4}
+            src={IMG5}
             width="100%"
             height="100%"
             alt="Plantation Shutters"
@@ -135,13 +136,13 @@ export default function Home() {
 
       <div className="row m-0">
         <div className="col-lg-4 p-0">
-          <img className="banner-img" src={IMG5} alt="Plantation Shutters" />
-        </div>
-        <div className="col-lg-4 p-0">
           <img className="banner-img" src={IMG6} alt="Plantation Shutters" />
         </div>
         <div className="col-lg-4 p-0">
           <img className="banner-img" src={IMG7} alt="Plantation Shutters" />
+        </div>
+        <div className="col-lg-4 p-0">
+          <img className="banner-img" src={IMG8} alt="Plantation Shutters" />
         </div>
       </div>
       <Services
