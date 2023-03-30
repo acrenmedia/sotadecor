@@ -26,7 +26,7 @@ const Header = () => {
       <nav className="sota-nav">
         <div className="sota-nav__links">
           <Link to="/about">About</Link>
-          <a href="https://www.houzz.com/professionals/window-treatments/sota-window-coverings-pfvwus-pf~1762534943#reviews" target="_blank">Testimonials</a>
+          <a href="https://www.houzz.com/professionals/window-treatments/sota-window-coverings-pfvwus-pf~1762534943#reviews" target="_blank" rel="noreferrer">Testimonials</a>
           <Link className="sota-nav__logo" to="/">
             <img src={LOGO} alt="SOTA Window Coverings logo" />
             <span>SOTA WINDOW COVERINGS</span>
@@ -54,7 +54,7 @@ const Header = () => {
       >
         <div className="mobile-menu__links d-flex flex-column">
           <Link to="/about">About</Link>
-          <a href="https://www.houzz.com/professionals/window-treatments/sota-window-coverings-pfvwus-pf~1762534943#reviews" target="_blank">Testimonials</a>
+          <a href="https://www.houzz.com/professionals/window-treatments/sota-window-coverings-pfvwus-pf~1762534943#reviews" target="_blank" rel="noreferrer">Testimonials</a>
           <Link to="/gallery">Gallery</Link>
           <Link to="/contact">Contact</Link>
         </div>
