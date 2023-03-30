@@ -1,7 +1,6 @@
-import { Link } from "gatsby";
 import React from "react";
+import { Link } from "gatsby";
 import Layout from "../../components/Layout";
-import "../styles/gallery/plantationshutters.css"
 import IMG from "../../assets/images/gallery/plantationshutters/IMG_5166.jpeg"
 import IMG2 from "../../assets/images/gallery/plantationshutters/IMG_5167.jpeg"
 import IMG3 from "../../assets/images/gallery/plantationshutters/IMG_5168.jpeg"
@@ -45,14 +44,14 @@ export default function PlantationShutters() {
             <img
               className="w-100 h-100"
               src={IMG}
-              alt="Plantation Shutter"
+              alt="Plantation Shutters"
             />
           </div>
           <div className="col-sm-6 mb-3 gallery-img">
             <img
               className="w-100 h-100"
               src={IMG2}
-              alt="Plantation Shutter"
+              alt="Plantation Shutters"
             />
           </div>
         </div>
@@ -61,14 +60,14 @@ export default function PlantationShutters() {
             <img
               className="w-100 h-100"
               src={IMG3}
-              alt="Plantation Shutter"
+              alt="Plantation Shutters"
             />
           </div>
           <div className="col-sm-6 mb-3 gallery-img">
             <img
               className="w-100 h-100"
               src={IMG4}
-              alt="Plantation Shutter"
+              alt="Plantation Shutters"
             />
           </div>
         </div>
@@ -77,14 +76,14 @@ export default function PlantationShutters() {
             <img
               className="w-100 h-100"
               src={IMG5}
-              alt="Plantation Shutter"
+              alt="Plantation Shutters"
             />
           </div>
           <div className="col-sm-6 mb-3 gallery-img">
             <img
               className="w-100 h-100"
               src={IMG6}
-              alt="Plantation Shutter"
+              alt="Plantation Shutters"
             />
           </div>
         </div>
@@ -93,14 +92,14 @@ export default function PlantationShutters() {
             <img
               className="w-100 h-100"
               src={IMG7}
-              alt="Plantation Shutter"
+              alt="Plantation Shutters"
             />
           </div>
           <div className="col-sm-6 mb-3 gallery-img">
             <img
               className="w-100 h-100"
               src={IMG8}
-              alt="Plantation Shutter"
+              alt="Plantation Shutters"
             />
           </div>
         </div>
@@ -109,14 +108,14 @@ export default function PlantationShutters() {
             <img
               className="w-100 h-100"
               src={IMG9}
-              alt="Plantation Shutter"
+              alt="Plantation Shutters"
             />
           </div>
           <div className="col-sm-6 mb-3 gallery-img">
             <img
               className="w-100 h-100"
               src={IMG10}
-              alt="Plantation Shutter"
+              alt="Plantation Shutters"
             />
           </div>
         </div>
@@ -125,14 +124,14 @@ export default function PlantationShutters() {
             <img
               className="w-100 h-100"
               src={IMG11}
-              alt="Plantation Shutter"
+              alt="Plantation Shutters"
             />
           </div>
           <div className="col-sm-6 mb-3 gallery-img">
             <img
               className="w-100 h-100"
               src={IMG12}
-              alt="Plantation Shutter"
+              alt="Plantation Shutters"
             />
           </div>
         </div>
@@ -141,14 +140,14 @@ export default function PlantationShutters() {
             <img
               className="w-100 h-100"
               src={IMG13}
-              alt="Plantation Shutter"
+              alt="Plantation Shutters"
             />
           </div>
           <div className="col-sm-6 mb-3 gallery-img">
             <img
               className="w-100 h-100"
               src={IMG14}
-              alt="Plantation Shutter"
+              alt="Plantation Shutters"
             />
           </div>
         </div>
@@ -157,14 +156,14 @@ export default function PlantationShutters() {
             <img
               className="w-100 h-100"
               src={IMG15}
-              alt="Plantation Shutter"
+              alt="Plantation Shutters"
             />
           </div>
           <div className="col-sm-6 mb-3 gallery-img">
             <img
               className="w-100 h-100"
               src={IMG16}
-              alt="Plantation Shutter"
+              alt="Plantation Shutters"
             />
           </div>
         </div>
@@ -173,14 +172,14 @@ export default function PlantationShutters() {
             <img
               className="w-100 h-100"
               src={IMG17}
-              alt="Plantation Shutter"
+              alt="Plantation Shutters"
             />
           </div>
           <div className="col-sm-6 mb-3 gallery-img">
             <img
               className="w-100 h-100"
               src={IMG18}
-              alt="Plantation Shutter"
+              alt="Plantation Shutters"
             />
           </div>
         </div>
@@ -189,14 +188,14 @@ export default function PlantationShutters() {
             <img
               className="w-100 h-100"
               src={IMG19}
-              alt="Plantation Shutter"
+              alt="Plantation Shutters"
             />
           </div>
           <div className="col-sm-6 mb-3 gallery-img">
             <img
               className="w-100 h-100"
               src={IMG20}
-              alt="Plantation Shutter"
+              alt="Plantation Shutters"
             />
           </div>
         </div>
@@ -205,14 +204,14 @@ export default function PlantationShutters() {
             <img
               className="w-100 h-100"
               src={IMG21}
-              alt="Plantation Shutter"
+              alt="Plantation Shutters"
             />
           </div>
           <div className="col-sm-6 mb-3 gallery-img">
             <img
               className="w-100 h-100"
               src={IMG22}
-              alt="Plantation Shutter"
+              alt="Plantation Shutters"
             />
           </div>
         </div>
@@ -221,14 +220,14 @@ export default function PlantationShutters() {
             <img
               className="w-100 h-100"
               src={IMG23}
-              alt="Plantation Shutter"
+              alt="Plantation Shutters"
             />
           </div>
           <div className="col-sm-6 mb-3 gallery-img">
             <img
               className="w-100 h-100"
               src={IMG24}
-              alt="Plantation Shutter"
+              alt="Plantation Shutters"
             />
           </div>
         </div>
@@ -237,14 +236,14 @@ export default function PlantationShutters() {
             <img
               className="w-100 h-100"
               src={IMG25}
-              alt="Plantation Shutter"
+              alt="Plantation Shutters"
             />
           </div>
           <div className="col-sm-6 mb-3 gallery-img">
             <img
               className="w-100 h-100"
               src={IMG26}
-              alt="Plantation Shutter"
+              alt="Plantation Shutters"
             />
           </div>
         </div>
@@ -253,14 +252,14 @@ export default function PlantationShutters() {
             <img
               className="w-100 h-100"
               src={IMG27}
-              alt="Plantation Shutter"
+              alt="Plantation Shutters"
             />
           </div>
           <div className="col-sm-6 mb-3 gallery-img">
             <img
               className="w-100 h-100"
               src={IMG28}
-              alt="Plantation Shutter"
+              alt="Plantation Shutters"
             />
           </div>
         </div>

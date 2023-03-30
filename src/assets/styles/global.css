@@ -88,6 +88,14 @@ body {
   padding: 10px 0;
 }
 
+.gallery-img {
+  height: 500px;
+}
+
+.gallery-img img {
+  object-fit: cover;
+}
+
 .order-2 {
   order: unset !important;
 }
