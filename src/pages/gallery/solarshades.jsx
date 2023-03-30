@@ -12,42 +12,42 @@ import IMG8 from "../../assets/images/gallery/solarshades/IMG_5194.jpeg";
 
 export default function SolarShades() {
   return (
-    <Layout title="Plantation Shutters">
+    <Layout>
       <div className="container">
         <div className="row">
-          <div className="col-sm-12">
+          <div className="col-lg-12">
             <h1 className="text-center p-4">Solar Shades</h1>
           </div>
         </div>
         <div className="row">
-          <div className="col-sm-6 mb-3 gallery-img">
+          <div className="col-lg-6 mb-3 gallery-img">
             <img className="w-100 h-100" src={IMG} alt="Solar Shades" />
           </div>
-          <div className="col-sm-6 mb-3 gallery-img">
+          <div className="col-lg-6 mb-3 gallery-img">
             <img className="w-100 h-100" src={IMG2} alt="Solar Shades" />
           </div>
         </div>
         <div className="row">
-          <div className="col-sm-6 mb-3 gallery-img">
+          <div className="col-lg-6 mb-3 gallery-img">
             <img className="w-100 h-100" src={IMG3} alt="Solar Shades" />
           </div>
-          <div className="col-sm-6 mb-3 gallery-img">
+          <div className="col-lg-6 mb-3 gallery-img">
             <img className="w-100 h-100" src={IMG4} alt="Solar Shades" />
           </div>
         </div>
         <div className="row">
-          <div className="col-sm-6 mb-3 gallery-img">
+          <div className="col-lg-6 mb-3 gallery-img">
             <img className="w-100 h-100" src={IMG5} alt="Solar Shades" />
           </div>
-          <div className="col-sm-6 mb-3 gallery-img">
+          <div className="col-lg-6 mb-3 gallery-img">
             <img className="w-100 h-100" src={IMG6} alt="Solar Shades" />
           </div>
         </div>
         <div className="row">
-          <div className="col-sm-6 mb-3 gallery-img">
+          <div className="col-lg-6 mb-3 gallery-img">
             <img className="w-100 h-100" src={IMG7} alt="Solar Shades" />
           </div>
-          <div className="col-sm-6 mb-3 gallery-img">
+          <div className="col-lg-6 mb-3 gallery-img">
             <img className="w-100 h-100" src={IMG8} alt="Solar Shades" />
           </div>
         </div>

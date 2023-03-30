@@ -32,22 +32,22 @@ import IMG28 from "../../assets/images/gallery/plantationshutters/IMG_1718.jpeg"
 
 export default function PlantationShutters() {
   return (
-    <Layout title="Plantation Shutters">
+    <Layout>
       <div className="container">
         <div className="row">
-          <div className="col-sm-12">
+          <div className="col-lg-12">
             <h1 className="text-center p-4">Plantation Shutters</h1>
           </div>
         </div>
         <div className="row">
-          <div className="col-sm-6 mb-3 gallery-img">
+          <div className="col-lg-6 mb-3 gallery-img">
             <img
               className="w-100 h-100"
               src={IMG}
               alt="Plantation Shutters"
             />
           </div>
-          <div className="col-sm-6 mb-3 gallery-img">
+          <div className="col-lg-6 mb-3 gallery-img">
             <img
               className="w-100 h-100"
               src={IMG2}
@@ -56,14 +56,14 @@ export default function PlantationShutters() {
           </div>
         </div>
         <div className="row">
-          <div className="col-sm-6 mb-3 gallery-img">
+          <div className="col-lg-6 mb-3 gallery-img">
             <img
               className="w-100 h-100"
               src={IMG3}
               alt="Plantation Shutters"
             />
           </div>
-          <div className="col-sm-6 mb-3 gallery-img">
+          <div className="col-lg-6 mb-3 gallery-img">
             <img
               className="w-100 h-100"
               src={IMG4}
@@ -72,14 +72,14 @@ export default function PlantationShutters() {
           </div>
         </div>
         <div className="row">
-          <div className="col-sm-6 mb-3 gallery-img">
+          <div className="col-lg-6 mb-3 gallery-img">
             <img
               className="w-100 h-100"
               src={IMG5}
               alt="Plantation Shutters"
             />
           </div>
-          <div className="col-sm-6 mb-3 gallery-img">
+          <div className="col-lg-6 mb-3 gallery-img">
             <img
               className="w-100 h-100"
               src={IMG6}
@@ -88,14 +88,14 @@ export default function PlantationShutters() {
           </div>
         </div>
         <div className="row">
-          <div className="col-sm-6 mb-3 gallery-img">
+          <div className="col-lg-6 mb-3 gallery-img">
             <img
               className="w-100 h-100"
               src={IMG7}
               alt="Plantation Shutters"
             />
           </div>
-          <div className="col-sm-6 mb-3 gallery-img">
+          <div className="col-lg-6 mb-3 gallery-img">
             <img
               className="w-100 h-100"
               src={IMG8}
@@ -104,14 +104,14 @@ export default function PlantationShutters() {
           </div>
         </div>
         <div className="row">
-          <div className="col-sm-6 mb-3 gallery-img">
+          <div className="col-lg-6 mb-3 gallery-img">
             <img
               className="w-100 h-100"
               src={IMG9}
               alt="Plantation Shutters"
             />
           </div>
-          <div className="col-sm-6 mb-3 gallery-img">
+          <div className="col-lg-6 mb-3 gallery-img">
             <img
               className="w-100 h-100"
               src={IMG10}
@@ -120,14 +120,14 @@ export default function PlantationShutters() {
           </div>
         </div>
         <div className="row">
-          <div className="col-sm-6 mb-3 gallery-img">
+          <div className="col-lg-6 mb-3 gallery-img">
             <img
               className="w-100 h-100"
               src={IMG11}
               alt="Plantation Shutters"
             />
           </div>
-          <div className="col-sm-6 mb-3 gallery-img">
+          <div className="col-lg-6 mb-3 gallery-img">
             <img
               className="w-100 h-100"
               src={IMG12}
@@ -136,14 +136,14 @@ export default function PlantationShutters() {
           </div>
         </div>
         <div className="row">
-          <div className="col-sm-6 mb-3 gallery-img">
+          <div className="col-lg-6 mb-3 gallery-img">
             <img
               className="w-100 h-100"
               src={IMG13}
               alt="Plantation Shutters"
             />
           </div>
-          <div className="col-sm-6 mb-3 gallery-img">
+          <div className="col-lg-6 mb-3 gallery-img">
             <img
               className="w-100 h-100"
               src={IMG14}
@@ -152,14 +152,14 @@ export default function PlantationShutters() {
           </div>
         </div>
         <div className="row">
-          <div className="col-sm-6 mb-3 gallery-img">
+          <div className="col-lg-6 mb-3 gallery-img">
             <img
               className="w-100 h-100"
               src={IMG15}
               alt="Plantation Shutters"
             />
           </div>
-          <div className="col-sm-6 mb-3 gallery-img">
+          <div className="col-lg-6 mb-3 gallery-img">
             <img
               className="w-100 h-100"
               src={IMG16}
@@ -168,14 +168,14 @@ export default function PlantationShutters() {
           </div>
         </div>
         <div className="row">
-          <div className="col-sm-6 mb-3 gallery-img">
+          <div className="col-lg-6 mb-3 gallery-img">
             <img
               className="w-100 h-100"
               src={IMG17}
               alt="Plantation Shutters"
             />
           </div>
-          <div className="col-sm-6 mb-3 gallery-img">
+          <div className="col-lg-6 mb-3 gallery-img">
             <img
               className="w-100 h-100"
               src={IMG18}
@@ -184,14 +184,14 @@ export default function PlantationShutters() {
           </div>
         </div>
         <div className="row">
-          <div className="col-sm-6 mb-3 gallery-img">
+          <div className="col-lg-6 mb-3 gallery-img">
             <img
               className="w-100 h-100"
               src={IMG19}
               alt="Plantation Shutters"
             />
           </div>
-          <div className="col-sm-6 mb-3 gallery-img">
+          <div className="col-lg-6 mb-3 gallery-img">
             <img
               className="w-100 h-100"
               src={IMG20}
@@ -200,14 +200,14 @@ export default function PlantationShutters() {
           </div>
         </div>
         <div className="row">
-          <div className="col-sm-6 mb-3 gallery-img">
+          <div className="col-lg-6 mb-3 gallery-img">
             <img
               className="w-100 h-100"
               src={IMG21}
               alt="Plantation Shutters"
             />
           </div>
-          <div className="col-sm-6 mb-3 gallery-img">
+          <div className="col-lg-6 mb-3 gallery-img">
             <img
               className="w-100 h-100"
               src={IMG22}
@@ -216,14 +216,14 @@ export default function PlantationShutters() {
           </div>
         </div>
         <div className="row">
-          <div className="col-sm-6 mb-3 gallery-img">
+          <div className="col-lg-6 mb-3 gallery-img">
             <img
               className="w-100 h-100"
               src={IMG23}
               alt="Plantation Shutters"
             />
           </div>
-          <div className="col-sm-6 mb-3 gallery-img">
+          <div className="col-lg-6 mb-3 gallery-img">
             <img
               className="w-100 h-100"
               src={IMG24}
@@ -232,14 +232,14 @@ export default function PlantationShutters() {
           </div>
         </div>
         <div className="row">
-          <div className="col-sm-6 mb-3 gallery-img">
+          <div className="col-lg-6 mb-3 gallery-img">
             <img
               className="w-100 h-100"
               src={IMG25}
               alt="Plantation Shutters"
             />
           </div>
-          <div className="col-sm-6 mb-3 gallery-img">
+          <div className="col-lg-6 mb-3 gallery-img">
             <img
               className="w-100 h-100"
               src={IMG26}
@@ -248,14 +248,14 @@ export default function PlantationShutters() {
           </div>
         </div>
         <div className="row">
-          <div className="col-sm-6 mb-3 gallery-img">
+          <div className="col-lg-6 mb-3 gallery-img">
             <img
               className="w-100 h-100"
               src={IMG27}
               alt="Plantation Shutters"
             />
           </div>
-          <div className="col-sm-6 mb-3 gallery-img">
+          <div className="col-lg-6 mb-3 gallery-img">
             <img
               className="w-100 h-100"
               src={IMG28}
