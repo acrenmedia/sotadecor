@@ -2,8 +2,6 @@ import * as React from "react";
 import Layout from "../components/Layout";
 import { Carousel } from "react-bootstrap";
 import { Link } from "gatsby";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faChevronCircleRight } from "@fortawesome/free-solid-svg-icons";
 import "./styles/index.css";
 import IMG1 from "../assets/images/index/IMG_5117.jpeg";
 import IMG2 from "../assets/images/index/IMG_5119.jpeg";
@@ -12,6 +10,7 @@ import IMG4 from "../assets/images/index/IMG_5136.jpeg";
 import IMG5 from "../assets/images/index/IMG_5130.jpeg";
 import IMG6 from "../assets/images/index/IMG_5131.jpeg";
 import IMG7 from "../assets/images/index/IMG_5138.jpeg";
+import Services from "../components/Services/Services";
 
 export default function Home() {
   return (
@@ -145,44 +144,11 @@ export default function Home() {
           <img className="banner-img" src={IMG7} alt="Plantation Shutters" />
         </div>
       </div>
-
-      <div className="row m-0 services">
-        <div className="col-lg-12">
-          <div className="container">
-            <h2 className="text-center p-4">Services</h2>
-            <div className="row m-0">
-              <div className="col-lg-12 p-0 services-img plantationshutters">
-                <Link to="/gallery/plantationshutters">
-                  <h3>Plantation Shutters</h3>
-                  <span>
-                    Learn More <FontAwesomeIcon icon={faChevronCircleRight} />
-                  </span>
-                </Link>
-              </div>
-            </div>
-            <div className="row m-0">
-              <div className="col-lg-12 p-0 services-img solarshades">
-                <Link to="/gallery/solarshades">
-                  <h3>Solar Shades</h3>
-                  <span>
-                    Learn More <FontAwesomeIcon icon={faChevronCircleRight} />
-                  </span>
-                </Link>
-              </div>
-            </div>
-            <div className="row m-0">
-              <div className="col-lg-12 p-0 services-img motorization">
-                <Link to="/gallery/motorization">
-                  <h3>Motorization</h3>
-                  <span>
-                    Learn More <FontAwesomeIcon icon={faChevronCircleRight} />
-                  </span>
-                </Link>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+      <Services
+        title="Services"
+        photoLink="Learn More"
+        videoLink="Learn More"
+      />
     </Layout>
   );
 }

@@ -80,53 +80,6 @@ body {
   padding: 10px 0;
 }
 
-.services-img {
-  color: #ffffff;
-  text-align: center;
-  width: 100%;
-  height: 20rem;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-}
-
-.services-img a {
-  color: #ffffff;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-decoration: none;
-  align-items: center;
-  padding: 0;
-  margin: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.35);
-  transition: all 0.2s ease-in-out;
-}
-
-.services-img a:hover {
-  color: #ffffff;
-  text-decoration: none;
-  background-color: rgba(0, 0, 0, 0);
-}
-
-.services-img a:hover span {
-  text-decoration: underline;
-}
-
-.plantationshutters {
-  background-image: url("../images/global/IMG_5128.jpeg");
-}
-
-.solarshades {
-  background-image: url("../images/global/IMG_5127.jpeg");
-}
-
-.motorization {
-  background-image: url("../images/global/IMG_5186.jpeg");
-}
-
 .order-2 {
   order: unset !important;
 }
