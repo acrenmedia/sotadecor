@@ -1,14 +1,46 @@
 import React, { useState } from "react";
+import { Alert } from "react-bootstrap";
 import Layout from "../components/Layout";
 import "./styles/contact.css";
 
 export default function Contact() {
+  const [show, setShow] = useState(false);
+
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
   const [phoneNumber, setPhoneNumber] = useState("");
   const [email, setEmail] = useState("");
   const [zipCode, setZipCode] = useState("");
   const [message, setMessage] = useState("");
+
+  let variant;
+  let alertMessage;
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    if (
+      firstName !== "" &&
+      lastName !== "" &&
+      email !== "" &&
+      phoneNumber !== "" &&
+      message !== ""
+    ) {
+      variant = "success";
+      alertMessage = "Success";
+      setShow(true);
+      setTimeout(() => {
+        setShow(false);
+      }, 3000);
+    } else {
+      variant = "danger";
+      alertMessage = "There is an error in your submission. Please make sure that all fields are filled out correctly.";
+      setShow(true);
+      setTimeout(() => {
+        setShow(false);
+      }, 3000);
+    }
+  };
 
   return (
     <Layout>
@@ -20,12 +52,22 @@ export default function Contact() {
         </div>
         <div className="row">
           <div className="col-lg-12">
+            <Alert
+              style={{ width: "90%" }}
+              className="my-4 text-center mx-auto"
+              show={show}
+              variant={variant}
+            >
+              {alertMessage}
+            </Alert>
+
             <form
               name="contact"
               method="POST"
               netlify-honeypot="bot-field"
               data-netlify="true"
               className="form form--contact"
+              onSubmit={handleSubmit}
             >
               <input type="hidden" name="form-name" value="contact" />
               <div className="d-none">
