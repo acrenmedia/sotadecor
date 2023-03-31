@@ -70,7 +70,7 @@ export default function Home() {
               data-netlify="true"
               className="form"
             >
-              <input type="hidden" name="form-name" value="contact" />
+              <input type="hidden" name="form-name" value="consultation" />
               <div className="d-none">
                 <label htmlFor="bot-field">
                   Don’t fill this out if you’re human:
@@ -128,7 +128,7 @@ export default function Home() {
                 />
               </div>
               <div className="input-field">
-                <label htmlFor="project-zip">Project Zip Code</label>
+                <label htmlFor="project-zip">Project Zip Code*</label>
                 <input
                   name="project-zip"
                   type="text"
@@ -136,6 +136,7 @@ export default function Home() {
                   onChange={(e) => {
                     setZipCode(e.target.value);
                   }}
+                  required
                 />
               </div>
               <div className="input-field">
