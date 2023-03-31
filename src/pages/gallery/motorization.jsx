@@ -26,3 +26,16 @@ export default function Motorization() {
     </Layout>
   );
 }
+
+export const Head = () => (
+  <>
+    <title>
+      Motorization | SOTA Window Coverings — Window Coverings in Delray Beach
+      Florida
+    </title>
+    <meta
+      name="description"
+      content="Discover the convenience of motorized blinds with SOTA Window Coverings! Watch our video showcasing the latest in motorization technology for your window treatments. As a family-owned business with over 15 years of experience, we are fully licensed and insured and specialize in a variety of window treatment services, including Plantation Shutters (Wood and Poly), Solar Shades, Horizontal Shades, Verticals, and Motorization. Our 5-star reviews speak to our commitment to quality and customer satisfaction. Contact us today for a consultation and let us show you how motorized blinds can enhance the beauty and functionality of your home or business."
+    />
+  </>
+);

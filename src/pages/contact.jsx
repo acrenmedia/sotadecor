@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Layout from "../components/Layout";
 import "./styles/contact.css";
 
-const Contact = () => {
+export default function Contact() {
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
   const [phoneNumber, setPhoneNumber] = useState("");
@@ -112,88 +112,21 @@ const Contact = () => {
                 SUBMIT
               </button>
             </form>
-            {/* <form
-              name="contact"
-              method="POST"
-              netlify-honeypot="bot-field"
-              data-netlify="true"
-            >
-              <input type="hidden" name="form-name" value="contact" />
-              <div className="d-none">
-                <label htmlFor="bot-field">
-                  Don’t fill this out if you’re human:
-                </label>
-                <input name="bot-field" />
-              </div>
-              <div className="form-group">
-                <label htmlFor="name">Name</label>
-                <input
-                  type="text"
-                  className="form-control"
-                  id="name"
-                  name="name"
-                  value={name}
-                  onChange={(e) => {
-                    setName(e.target.value);
-                  }}
-                  placeholder="Name"
-                  required
-                />
-              </div>
-              <div className="form-group">
-                <label htmlFor="email-address">Email</label>
-                <input
-                  type="email"
-                  className="form-control"
-                  id="email-address"
-                  name="emailAddress"
-                  value={email}
-                  onChange={(e) => {
-                    setEmail(e.target.value);
-                  }}
-                  placeholder="Email"
-                  required
-                />
-              </div>
-              <div className="form-group">
-                <label htmlFor="phone-number">Phone Number</label>
-                <input
-                  type="tel"
-                  className="form-control"
-                  id="phone-number"
-                  name="phoneNumber"
-                  value={phoneNumber}
-                  onChange={(e) => {
-                    setPhoneNumber(e.target.value);
-                  }}
-                  placeholder="Phone Number"
-                  required
-                />
-              </div>
-              <div className="form-group">
-                <label htmlFor="textarea-1">Message</label>
-                <textarea
-                  className="form-control"
-                  id="message"
-                  name="message"
-                  value={message}
-                  onChange={(e) => {
-                    setMessage(e.target.value);
-                  }}
-                  rows="10"
-                  placeholder="Message"
-                  required
-                ></textarea>
-              </div>
-              <button type="submit" className="global-btn submitBtn">
-                Submit
-              </button>
-            </form> */}
           </div>
         </div>
       </div>
     </Layout>
   );
-};
+}
 
-export default Contact;
+export const Head = () => (
+  <>
+    <title>
+      Contact | SOTA Window Coverings — Window Coverings in Delray Beach Florida
+    </title>
+    <meta
+      name="description"
+      content="Contact SOTA Window Coverings today for all your window treatment needs! Our family-owned business has been providing top-quality services in Delray Beach, Florida for over 15 years. We are fully licensed and insured, and specialize in Plantation Shutters (Wood and Poly), Solar Shades, Horizontal Shades, Verticals, and Motorization. Our 5-star reviews speak to our commitment to delivering exceptional customer service and quality workmanship. Contact us today for a consultation and let us transform your windows into beautiful design elements that will enhance the beauty and functionality of your home."
+    />
+  </>
+);

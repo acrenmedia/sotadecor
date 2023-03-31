@@ -58,3 +58,16 @@ export default function SolarShades() {
     </Layout>
   );
 }
+
+export const Head = () => (
+  <>
+    <title>
+      Solar Shades | SOTA Window Coverings — Window Coverings in Delray Beach
+      Florida
+    </title>
+    <meta
+      name="description"
+      content="Bring the beauty of the outdoors into your space with SOTA Window Coverings' Solar Shades! Browse our photo gallery and see how our solar shades can provide protection from harmful UV rays while still allowing natural light to flow in. As a family-owned business with over 15 years of experience, we are fully licensed and insured and specialize in a variety of window treatment services, including Plantation Shutters (Wood and Poly), Solar Shades, Horizontal Shades, Verticals, and Motorization. Our 5-star reviews speak to our commitment to quality and customer satisfaction. Contact us today for a consultation and let us show you how our solar shades can enhance your home or business."
+    />
+  </>
+);

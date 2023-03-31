@@ -87,3 +87,15 @@ export default function About() {
     </Layout>
   );
 }
+
+export const Head = () => (
+  <>
+    <title>
+      About | SOTA Window Coverings — Window Coverings in Delray Beach Florida
+    </title>
+    <meta
+      name="description"
+      content="Welcome to SOTA Window Coverings! Based in Delray Beach, Florida, we've been providing top-quality window treatment services for 15 years. As a fully licensed and insured company, we are committed to providing our customers with the best possible experience. Our specialized services include Plantation Shutters (Wood and Poly), Solar Shades, Horizontal Shades, Verticals, and Motorization, and our 5-star reviews speak to our dedication to quality and customer satisfaction. Contact us today to learn more about our services and how we can transform your windows into beautiful design elements."
+    />
+  </>
+);
