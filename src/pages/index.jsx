@@ -1,4 +1,4 @@
-import * as React from "react";
+import React, { useState } from "react";
 import Layout from "../components/Layout";
 import { Carousel } from "react-bootstrap";
 import { Link } from "gatsby";
@@ -15,6 +15,13 @@ import LOGO from "../assets/images/logo/SOTA.png";
 import Services from "../components/Services/Services";
 
 export default function Home() {
+  const [firstName, setFirstName] = useState("");
+  const [lastName, setLastName] = useState("");
+  const [phoneNumber, setPhoneNumber] = useState("");
+  const [email, setEmail] = useState("");
+  const [zipCode, setZipCode] = useState("");
+  const [message, setMessage] = useState("");
+
   return (
     <Layout>
       <div className="row m-0 hero">
@@ -56,37 +63,98 @@ export default function Home() {
             <span>Schedule your free consultation today!</span>
           </div>
           <div className="divider"></div>
-          <form className="form">
-            <div className="name-group">
-              <div className="input-field">
-                <label htmlFor="first-name">First Name*</label>
-                <input name="first-name" type="text" />
+          <form
+              name="consultation"
+              method="POST"
+              netlify-honeypot="bot-field"
+              data-netlify="true"
+              className="form"
+            >
+              <input type="hidden" name="form-name" value="contact" />
+              <div className="d-none">
+                <label htmlFor="bot-field">
+                  Don’t fill this out if you’re human:
+                </label>
+                <input name="bot-field" />
+              </div>
+              <div className="name-group">
+                <div className="input-field">
+                  <label htmlFor="first-name">First Name*</label>
+                  <input
+                    name="first-name"
+                    type="text"
+                    value={firstName}
+                    onChange={(e) => {
+                      setFirstName(e.target.value);
+                    }}
+                    required
+                  />
+                </div>
+                <div className="input-field">
+                  <label htmlFor="last-name">Last Name*</label>
+                  <input
+                    name="last-name"
+                    type="text"
+                    value={lastName}
+                    onChange={(e) => {
+                      setLastName(e.target.value);
+                    }}
+                    required
+                  />
+                </div>
               </div>
               <div className="input-field">
-                <label htmlFor="last-name">Last Name*</label>
-                <input name="last-name" type="text" />
+                <label htmlFor="phone-number">Phone Number*</label>
+                <input
+                  name="phone-number"
+                  type="text"
+                  value={phoneNumber}
+                  onChange={(e) => {
+                    setPhoneNumber(e.target.value);
+                  }}
+                  required
+                />
               </div>
-            </div>
-            <div className="input-field">
-              <label htmlFor="phone-number">Phone Number*</label>
-              <input name="phone-number" type="text" />
-            </div>
-            <div className="input-field">
-              <label htmlFor="email-address">Email Address*</label>
-              <input name="email-address" type="text" />
-            </div>
-            <div className="input-field">
-              <label htmlFor="project-zip">Project Zip Code*</label>
-              <input name="project-zip" type="text" />
-            </div>
-            <div className="input-field">
-              <label htmlFor="message">Message*</label>
-              <textarea name="message" cols="30" rows="5"></textarea>
-            </div>
-            <button className="button consult__btn mx-auto" type="submit">
-              SCHEDULE NOW
-            </button>
-          </form>
+              <div className="input-field">
+                <label htmlFor="email-address">Email Address*</label>
+                <input
+                  name="email-address"
+                  type="email"
+                  value={email}
+                  onChange={(e) => {
+                    setEmail(e.target.value);
+                  }}
+                  required
+                />
+              </div>
+              <div className="input-field">
+                <label htmlFor="project-zip">Project Zip Code</label>
+                <input
+                  name="project-zip"
+                  type="text"
+                  value={zipCode}
+                  onChange={(e) => {
+                    setZipCode(e.target.value);
+                  }}
+                />
+              </div>
+              <div className="input-field">
+                <label htmlFor="message">Message*</label>
+                <textarea
+                  name="message"
+                  cols="30"
+                  rows="5"
+                  value={message}
+                  onChange={(e) => {
+                    setMessage(e.target.value);
+                  }}
+                  required
+                ></textarea>
+              </div>
+              <button className="button button--dark mt-2" type="submit">
+                SUBMIT
+              </button>
+            </form>
         </div>
       </div>
 
