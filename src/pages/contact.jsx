@@ -73,8 +73,7 @@ export default function Contact() {
         <div className="row">
           <div className="col-lg-12">
             <Alert
-              style={{ width: "90%" }}
-              className="my-4 text-center mx-auto"
+              className="my-4 text-center"
               show={show}
               variant={variant}
             >

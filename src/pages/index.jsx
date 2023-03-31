@@ -115,8 +115,7 @@ export default function Home() {
           </div>
           <div className="divider"></div>
           <Alert
-            style={{ width: "90%" }}
-            className="my-4 text-center mx-auto"
+            className="my-4 text-center"
             show={show}
             variant={variant}
           >
