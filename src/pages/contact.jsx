@@ -35,6 +35,13 @@ export default function Contact() {
         body: new URLSearchParams(formData).toString(),
       })
         .then(() => {
+          setFirstName("");
+          setLastName("");
+          setPhoneNumber("");
+          setEmail("");
+          setZipCode("");
+          setMessage("");
+          
           setVariant("success");
           setAlertMessage("Success");
           setShow(true);
