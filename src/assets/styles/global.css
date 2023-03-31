@@ -16,6 +16,33 @@ body {
   min-height: 100vh;
 }
 
+.form {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.name-group {
+  display: flex;
+}
+
+.input-field {
+  display: flex;
+  flex-direction: column;
+  padding: 5px 5px 10px;
+}
+
+.input-field label {
+  padding-bottom: 5px;
+}
+
+.input-field input, textarea {
+  padding: 5px;
+}
+
+.name-group .input-field {
+  width: 50%;
+}
+
 .button {
   display: block;
   width: fit-content;

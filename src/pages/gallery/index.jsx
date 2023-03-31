@@ -6,11 +6,9 @@ export default function Gallery() {
   return (
     <div>
       <Layout>
-        <Services
-          title="Gallery"
-          photoLink="View Photos"
-          videoLink="View Video"
-        />
+        <Services photoLink="View Photos" videoLink="View Video">
+          <h1 className="text-center p-4">Gallery</h1>
+        </Services>
       </Layout>
     </div>
   );

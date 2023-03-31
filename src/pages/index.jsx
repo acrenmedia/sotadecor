@@ -48,7 +48,7 @@ export default function Home() {
             <span>Schedule your free consultation today!</span>
           </div>
           <div className="divider"></div>
-          <form className="consult__form">
+          <form className="form">
             <div className="name-group">
               <div className="input-field">
                 <label htmlFor="first-name">First Name*</label>
@@ -75,7 +75,7 @@ export default function Home() {
               <label htmlFor="message">Message*</label>
               <textarea name="message" cols="30" rows="5"></textarea>
             </div>
-            <button className="button consult__btn" type="submit">
+            <button className="button consult__btn mx-auto" type="submit">
               SCHEDULE NOW
             </button>
           </form>
@@ -145,11 +145,9 @@ export default function Home() {
           <img className="banner-img" src={IMG8} alt="Plantation Shutters" />
         </div>
       </div>
-      <Services
-        title="Services"
-        photoLink="Learn More"
-        videoLink="Learn More"
-      />
+      <Services photoLink="Learn More" videoLink="Learn More">
+        <h2 className="text-center p-4">Services</h2>
+      </Services>
     </Layout>
   );
 }

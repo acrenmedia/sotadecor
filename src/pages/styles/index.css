@@ -1,3 +1,10 @@
+.carousel,
+.carousel-inner,
+.carousel-item,
+.carousel-img {
+  height: 100%;
+}
+
 .carousel-img {
   min-height: calc(100vh - 100px);
   object-fit: cover;
@@ -20,33 +27,8 @@
   margin: 1rem auto;
 }
 
-.consult__form {
-  width: 90%;
-  margin: 0 auto;
-}
-
-.name-group {
-  display: flex;
-}
-
-.input-field {
-  display: flex;
-  flex-direction: column;
-  padding: 5px 5px 10px;
-}
-
-.input-field label {
-  padding-bottom: 5px;
-}
-
-.name-group .input-field {
-  width: 50%;
-}
-
 .consult__btn {
   margin-top: 10px;
-  margin-left: auto;
-  margin-right: auto;
   background-color: #4f397c;
   color: #ffffff;
   padding: 15px 25px;
