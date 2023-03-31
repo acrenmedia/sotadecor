@@ -13,8 +13,8 @@ export default function Contact() {
   const [zipCode, setZipCode] = useState("");
   const [message, setMessage] = useState("");
 
-  let variant;
-  let alertMessage;
+  const [variant, setVariant] = useState("");
+  const [alertMessage, setAlertMessage] = useState("");
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -35,25 +35,26 @@ export default function Contact() {
         body: new URLSearchParams(formData).toString(),
       })
         .then(() => {
-          variant = "success";
-          alertMessage = "Success";
+          setVariant("success");
+          setAlertMessage("Success");
           setShow(true);
           setTimeout(() => {
             setShow(false);
           }, 3000);
         })
         .catch((error) => {
-          variant = "danger";
-          alertMessage = error;
+          setVariant("danger");
+          setAlertMessage(error);
           setShow(true);
           setTimeout(() => {
             setShow(false);
           }, 3000);
         });
     } else {
-      variant = "danger";
-      alertMessage =
-        "There is an error in your submission. Please make sure that all fields are filled out correctly.";
+      setVariant("danger");
+      setAlertMessage(
+        "There is an error in your submission. Please make sure that all fields are filled out correctly."
+      );
       setShow(true);
       setTimeout(() => {
         setShow(false);

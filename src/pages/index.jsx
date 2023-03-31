@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Layout from "../components/Layout";
-import { Carousel } from "react-bootstrap";
+import { Alert, Carousel } from "react-bootstrap";
 import { Link } from "gatsby";
 import "./styles/index.css";
 import IMG1 from "../assets/images/index/IMG_5117.jpeg";
@@ -15,12 +15,63 @@ import LOGO from "../assets/images/logo/SOTA.png";
 import Services from "../components/Services/Services";
 
 export default function Home() {
+  const [show, setShow] = useState(false);
+
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
   const [phoneNumber, setPhoneNumber] = useState("");
   const [email, setEmail] = useState("");
   const [zipCode, setZipCode] = useState("");
   const [message, setMessage] = useState("");
+
+  const [variant, setVariant] = useState("");
+  const [alertMessage, setAlertMessage] = useState("");
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    if (
+      firstName !== "" &&
+      lastName !== "" &&
+      email !== "" &&
+      phoneNumber !== "" &&
+      message !== ""
+    ) {
+      const myForm = e.target;
+      const formData = new FormData(myForm);
+
+      fetch("/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: new URLSearchParams(formData).toString(),
+      })
+        .then(() => {
+          setVariant("success");
+          setAlertMessage("Success");
+          setShow(true);
+          setTimeout(() => {
+            setShow(false);
+          }, 3000);
+        })
+        .catch((error) => {
+          setVariant("danger");
+          setAlertMessage(error);
+          setShow(true);
+          setTimeout(() => {
+            setShow(false);
+          }, 3000);
+        });
+    } else {
+      setVariant("danger");
+      setAlertMessage(
+        "There is an error in your submission. Please make sure that all fields are filled out correctly."
+      );
+      setShow(true);
+      setTimeout(() => {
+        setShow(false);
+      }, 3000);
+    }
+  };
 
   return (
     <Layout>
@@ -63,99 +114,107 @@ export default function Home() {
             <span>Schedule your free consultation today!</span>
           </div>
           <div className="divider"></div>
+          <Alert
+            style={{ width: "90%" }}
+            className="my-4 text-center mx-auto"
+            show={show}
+            variant={variant}
+          >
+            {alertMessage}
+          </Alert>
           <form
-              name="consultation"
-              method="POST"
-              netlify-honeypot="bot-field"
-              data-netlify="true"
-              className="form"
-            >
-              <input type="hidden" name="form-name" value="consultation" />
-              <div className="d-none">
-                <label htmlFor="bot-field">
-                  Don’t fill this out if you’re human:
-                </label>
-                <input name="bot-field" />
-              </div>
-              <div className="name-group">
-                <div className="input-field">
-                  <label htmlFor="first-name">First Name*</label>
-                  <input
-                    name="first-name"
-                    type="text"
-                    value={firstName}
-                    onChange={(e) => {
-                      setFirstName(e.target.value);
-                    }}
-                    required
-                  />
-                </div>
-                <div className="input-field">
-                  <label htmlFor="last-name">Last Name*</label>
-                  <input
-                    name="last-name"
-                    type="text"
-                    value={lastName}
-                    onChange={(e) => {
-                      setLastName(e.target.value);
-                    }}
-                    required
-                  />
-                </div>
-              </div>
+            name="consultation"
+            netlify-honeypot="bot-field"
+            data-netlify="true"
+            className="form"
+            onSubmit={handleSubmit}
+          >
+            <input type="hidden" name="form-name" value="consultation" />
+            <div className="d-none">
+              <label htmlFor="bot-field">
+                Don’t fill this out if you’re human:
+              </label>
+              <input name="bot-field" />
+            </div>
+            <div className="name-group">
               <div className="input-field">
-                <label htmlFor="phone-number">Phone Number*</label>
+                <label htmlFor="first-name">First Name*</label>
                 <input
-                  name="phone-number"
+                  name="first-name"
                   type="text"
-                  value={phoneNumber}
+                  value={firstName}
                   onChange={(e) => {
-                    setPhoneNumber(e.target.value);
+                    setFirstName(e.target.value);
                   }}
                   required
                 />
               </div>
               <div className="input-field">
-                <label htmlFor="email-address">Email Address*</label>
+                <label htmlFor="last-name">Last Name*</label>
                 <input
-                  name="email-address"
-                  type="email"
-                  value={email}
-                  onChange={(e) => {
-                    setEmail(e.target.value);
-                  }}
-                  required
-                />
-              </div>
-              <div className="input-field">
-                <label htmlFor="project-zip">Project Zip Code*</label>
-                <input
-                  name="project-zip"
+                  name="last-name"
                   type="text"
-                  value={zipCode}
+                  value={lastName}
                   onChange={(e) => {
-                    setZipCode(e.target.value);
+                    setLastName(e.target.value);
                   }}
                   required
                 />
               </div>
-              <div className="input-field">
-                <label htmlFor="message">Message*</label>
-                <textarea
-                  name="message"
-                  cols="30"
-                  rows="5"
-                  value={message}
-                  onChange={(e) => {
-                    setMessage(e.target.value);
-                  }}
-                  required
-                ></textarea>
-              </div>
-              <button className="button button--dark mt-2" type="submit">
-                SUBMIT
-              </button>
-            </form>
+            </div>
+            <div className="input-field">
+              <label htmlFor="phone-number">Phone Number*</label>
+              <input
+                name="phone-number"
+                type="text"
+                value={phoneNumber}
+                onChange={(e) => {
+                  setPhoneNumber(e.target.value);
+                }}
+                required
+              />
+            </div>
+            <div className="input-field">
+              <label htmlFor="email-address">Email Address*</label>
+              <input
+                name="email-address"
+                type="email"
+                value={email}
+                onChange={(e) => {
+                  setEmail(e.target.value);
+                }}
+                required
+              />
+            </div>
+            <div className="input-field">
+              <label htmlFor="project-zip">Project Zip Code*</label>
+              <input
+                name="project-zip"
+                type="text"
+                value={zipCode}
+                onChange={(e) => {
+                  setZipCode(e.target.value);
+                }}
+                required
+              />
+            </div>
+            <div className="input-field">
+              <label htmlFor="message">Message*</label>
+              <textarea
+                name="message"
+                cols="30"
+                rows="5"
+                value={message}
+                onChange={(e) => {
+                  setMessage(e.target.value);
+                }}
+                required
+              ></textarea>
+            </div>
+            <button className="button button--dark mt-2" type="submit">
+              SUBMIT
+            </button>
+          </form>
         </div>
       </div>
 
