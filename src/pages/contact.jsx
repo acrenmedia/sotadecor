@@ -26,15 +26,34 @@ export default function Contact() {
       phoneNumber !== "" &&
       message !== ""
     ) {
-      variant = "success";
-      alertMessage = "Success";
-      setShow(true);
-      setTimeout(() => {
-        setShow(false);
-      }, 3000);
+      const myForm = e.target;
+      const formData = new FormData(myForm);
+
+      fetch("/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: new URLSearchParams(formData).toString(),
+      })
+        .then(() => {
+          variant = "success";
+          alertMessage = "Success";
+          setShow(true);
+          setTimeout(() => {
+            setShow(false);
+          }, 3000);
+        })
+        .catch((error) => {
+          variant = "danger";
+          alertMessage = error;
+          setShow(true);
+          setTimeout(() => {
+            setShow(false);
+          }, 3000);
+        });
     } else {
       variant = "danger";
-      alertMessage = "There is an error in your submission. Please make sure that all fields are filled out correctly.";
+      alertMessage =
+        "There is an error in your submission. Please make sure that all fields are filled out correctly.";
       setShow(true);
       setTimeout(() => {
         setShow(false);
@@ -63,7 +82,6 @@ export default function Contact() {
 
             <form
               name="contact"
-              method="POST"
               netlify-honeypot="bot-field"
               data-netlify="true"
               className="form form--contact"
