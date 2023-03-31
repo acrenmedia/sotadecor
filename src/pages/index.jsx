@@ -11,6 +11,7 @@ import IMG5 from "../assets/images/index/IMG_5161.jpeg";
 import IMG6 from "../assets/images/index/IMG_5130.jpeg";
 import IMG7 from "../assets/images/index/IMG_5131.jpeg";
 import IMG8 from "../assets/images/index/IMG_5138.jpeg";
+import LOGO from "../assets/images/logo/SOTA.png";
 import Services from "../components/Services/Services";
 
 export default function Home() {
@@ -43,6 +44,13 @@ export default function Home() {
           </Carousel>
         </div>
         <div className="col-lg-5 d-flex justify-content-center flex-column consult">
+          <div className="sota-logo sota-logo--consult">
+            <img src={LOGO} alt="SOTA Window Coverings logo" />
+            <span>SOTA WINDOW COVERINGS</span>
+          </div>
+          <span className="d-block text-center mt-1 mb-4 consult__phone">
+            <a href="tel: 5617054900">(561) 705-4900</a>
+          </span>
           <div className="consult__head text-center">
             <h3>FREE CONSULTATION</h3>
             <span>Schedule your free consultation today!</span>

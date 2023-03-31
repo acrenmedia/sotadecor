@@ -16,6 +16,10 @@
   background-color: #f3f5f6;
 }
 
+.consult__phone {
+  font-size: 1.25rem;
+}
+
 .consult__head span {
   color: #757575;
 }

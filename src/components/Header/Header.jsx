@@ -27,8 +27,8 @@ const Header = () => {
         <div className="sota-nav__links">
           <Link to="/about">About</Link>
           <a href="https://www.houzz.com/professionals/window-treatments/sota-window-coverings-pfvwus-pf~1762534943#reviews" target="_blank" rel="noreferrer">Testimonials</a>
-          <Link className="sota-nav__logo" to="/">
-            <img src={LOGO} alt="SOTA Window Coverings logo" />
+          <Link className="sota-logo sota-logo--nav" to="/">
+            <img style={{width: "90px"}} src={LOGO} alt="SOTA Window Coverings logo" />
             <span>SOTA WINDOW COVERINGS</span>
           </Link>
           <Link to="/gallery">Gallery</Link>
