@@ -24,17 +24,17 @@ const Footer = () => {
                 <div className="d-flex flex-column">
                   <h4>Connect</h4>
                   <span>
-                    <a href="https://www.houzz.com/professionals/window-treatments/sota-window-coverings-pfvwus-pf~1762534943" target="_blank">
+                    <a href="https://www.houzz.com/professionals/window-treatments/sota-window-coverings-pfvwus-pf~1762534943" target="_blank" rel="noreferrer">
                       <FontAwesomeIcon icon={faHouzz} /> Houzz
                     </a>
                   </span>
                   <span>
-                    <a href="https://www.facebook.com/SOTA-Window-Coverings-162212467184332/" target="_blank">
+                    <a href="https://www.facebook.com/SOTA-Window-Coverings-162212467184332/" target="_blank" rel="noreferrer">
                       <FontAwesomeIcon icon={faFacebook} /> Facebook
                     </a>
                   </span>
                   <span>
-                    <a href="https://instagram.com/sota_window_coverings" target="_blank">
+                    <a href="https://instagram.com/sota_window_coverings" target="_blank" rel="noreferrer">
                       <FontAwesomeIcon icon={faInstagram} /> Instagram
                     </a>
                   </span>
