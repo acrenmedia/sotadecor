@@ -22,8 +22,8 @@ export default function Contact() {
     if (
       firstName !== "" &&
       lastName !== "" &&
-      email !== "" &&
       phoneNumber !== "" &&
+      email !== "" &&
       message !== ""
     ) {
       const myForm = e.target;

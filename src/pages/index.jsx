@@ -36,8 +36,9 @@ export default function Home() {
     if (
       firstName !== "" &&
       lastName !== "" &&
-      email !== "" &&
       phoneNumber !== "" &&
+      email !== "" &&
+      zipCode !== "" &&
       message !== ""
     ) {
       const myForm = e.target;
