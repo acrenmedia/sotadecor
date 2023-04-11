@@ -243,7 +243,7 @@ export const Head = () => (
     </title>
     <meta
       name="description"
-      content="Experience the beauty of Plantation Shutters with SOTA Window Coverings! Browse our stunning collection of Plantation Shutters (Wood and Poly) photos and discover the perfect window treatment solution for your home or business. As a family-owned business with over 15 years of experience, we are fully licensed and insured and specialize in a variety of window treatment services, including Solar Shades, Horizontal Shades, Verticals, and Motorization. Our 5-star reviews speak to our commitment to quality and customer satisfaction. Contact us today for a consultation and let us transform your windows into beautiful design elements that will enhance the beauty and functionality of your space."
+      content="Experience the beauty of Plantation Shutters with SOTA Window Coverings! Browse our stunning collection of Plantation Shutters (Wood and Poly) photos and discover the perfect window treatment solution for your home or business. As a family-owned business with over 15 years of experience, we are fully licensed and insured and specialize in a variety of window treatment services, including Plantation Shutters (Poly & Wood) and Shades (Solar & Motorization). Our 5-star reviews speak to our commitment to quality and customer satisfaction. Contact us today for a consultation and let us transform your windows into beautiful design elements that will enhance the beauty and functionality of your space."
     />
   </>
 );

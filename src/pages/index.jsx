@@ -11,6 +11,9 @@ import IMG5 from "../assets/images/index/IMG_5161.jpeg";
 import IMG6 from "../assets/images/index/IMG_5130.jpeg";
 import IMG7 from "../assets/images/index/IMG_5131.jpeg";
 import IMG8 from "../assets/images/index/IMG_5138.jpeg";
+import IMG9 from "../assets/images/index/IMG_0012.jpeg";
+import IMG10 from "../assets/images/index/IMG_0013.jpeg";
+import IMG11 from "../assets/images/index/IMG_0651.jpeg";
 import LOGO from "../assets/images/logo/SOTA.png";
 import Services from "../components/Services/Services";
 
@@ -88,22 +91,43 @@ export default function Home() {
             <Carousel.Item>
               <img
                 className="d-block w-100 carousel-img"
-                src={IMG1}
+                src={IMG10}
                 alt="First slide"
               />
             </Carousel.Item>
             <Carousel.Item>
               <img
                 className="d-block w-100 carousel-img"
-                src={IMG2}
+                src={IMG1}
                 alt="Second slide"
               />
             </Carousel.Item>
             <Carousel.Item>
               <img
                 className="d-block w-100 carousel-img"
-                src={IMG3}
+                src={IMG11}
                 alt="Third slide"
+              />
+            </Carousel.Item>
+            <Carousel.Item>
+              <img
+                className="d-block w-100 carousel-img"
+                src={IMG2}
+                alt="Fourth slide"
+              />
+            </Carousel.Item>
+            <Carousel.Item>
+              <img
+                className="d-block w-100 carousel-img"
+                src={IMG9}
+                alt="Fifth slide"
+              />
+            </Carousel.Item>
+            <Carousel.Item>
+              <img
+                className="d-block w-100 carousel-img"
+                src={IMG3}
+                alt="Sixth slide"
               />
             </Carousel.Item>
           </Carousel>
@@ -121,11 +145,7 @@ export default function Home() {
             <span>Schedule your free consultation today!</span>
           </div>
           <div className="divider"></div>
-          <Alert
-            className="my-4 text-center"
-            show={show}
-            variant={variant}
-          >
+          <Alert className="my-4 text-center" show={show} variant={variant}>
             {alertMessage}
           </Alert>
           <form
@@ -257,9 +277,8 @@ export default function Home() {
             <span className="section__name">Licensed & Insured</span>
             <p>
               Get your windows done with confidence as we are fully licensed and
-              insured. Our specializations include Plantation Shutters (Wood and
-              Poly), Solar Shades, Horizontal Shades, Verticals, and
-              Motorization.
+              insured. Our specializations include Plantation Shutters (Poly &
+              Wood) and Shades (Solar & Motorization).
             </p>
             <Link className="button button--light" to="/gallery">
               SEE GALLERY
@@ -301,7 +320,7 @@ export const Head = () => (
     </title>
     <meta
       name="description"
-      content="Transform your windows with SOTA Window Coverings! Our family-owned business has been providing top-quality window treatment services for over 15 years in Delray Beach, Florida. As a fully licensed and insured company, we are committed to delivering exceptional service and specializing in Plantation Shutters (Wood and Poly), Solar Shades, Horizontal Shades, Verticals, and Motorization. Our 5-star reviews speak to our dedication to quality and customer satisfaction. Contact us today to schedule a consultation and discover how we can turn your windows into stunning design elements."
+      content="Transform your windows with SOTA Window Coverings! Our family-owned business has been providing top-quality window treatment services for over 15 years in Delray Beach, Florida. As a fully licensed and insured company, we are committed to delivering exceptional service and specializing in Plantation Shutters (Poly & Wood) and Shades (Solar & Motorization). Our 5-star reviews speak to our dedication to quality and customer satisfaction. Contact us today to schedule a consultation and discover how we can turn your windows into stunning design elements."
     />
   </>
 );

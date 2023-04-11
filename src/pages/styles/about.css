@@ -2,27 +2,26 @@
   justify-content: space-between;
 }
 
-.areas ul {
-  padding: 15px 15px;
-  margin: 0;
+.areas span {
+  font-size: 20px;
+  padding: 10px;
 }
 
-.areas ul:nth-child(1) {
+.areas span:nth-child(1) {
   padding-left: 0;
 }
 
-.areas ul li {
-  list-style-type: none;
-  margin: 5px 0;
+.areas span:nth-child(4) {
+  padding-right: 0;
 }
 
 @media (max-width: 991px) {
   .areas {
-    justify-content: center;
-    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: flex-start;
   }
 
-  .areas ul:nth-child(1) {
-    padding-left: 15px;
+  .areas span {
+    padding: 10px 0px;
   }
 }

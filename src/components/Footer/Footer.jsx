@@ -65,8 +65,8 @@ const Footer = () => {
                     </a>
                   </span>
                   <span>
-                    <a href="mailto: sales@sotadecor.com">
-                      <FontAwesomeIcon icon={faEnvelope} /> sales@sotadecor.com
+                    <a href="mailto: info@sotawindowconvering.com">
+                      <FontAwesomeIcon icon={faEnvelope} /> info@sotawindowconvering.com
                     </a>
                   </span>
                 </div>

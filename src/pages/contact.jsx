@@ -41,7 +41,7 @@ export default function Contact() {
           setEmail("");
           setZipCode("");
           setMessage("");
-          
+
           setVariant("success");
           setAlertMessage("Success");
           setShow(true);
@@ -79,11 +79,7 @@ export default function Contact() {
         </div>
         <div className="row">
           <div className="col-lg-12">
-            <Alert
-              className="my-4 text-center"
-              show={show}
-              variant={variant}
-            >
+            <Alert className="my-4 text-center" show={show} variant={variant}>
               {alertMessage}
             </Alert>
 
@@ -193,7 +189,7 @@ export const Head = () => (
     </title>
     <meta
       name="description"
-      content="Contact SOTA Window Coverings today for all your window treatment needs! Our family-owned business has been providing top-quality services in Delray Beach, Florida for over 15 years. We are fully licensed and insured, and specialize in Plantation Shutters (Wood and Poly), Solar Shades, Horizontal Shades, Verticals, and Motorization. Our 5-star reviews speak to our commitment to delivering exceptional customer service and quality workmanship. Contact us today for a consultation and let us transform your windows into beautiful design elements that will enhance the beauty and functionality of your home."
+      content="Contact SOTA Window Coverings today for all your window treatment needs! Our family-owned business has been providing top-quality services in Delray Beach, Florida for over 15 years. We are fully licensed and insured, and specialize in Plantation Shutters (Poly & Wood) and Shades (Solar & Motorization). Our 5-star reviews speak to our commitment to delivering exceptional customer service and quality workmanship. Contact us today for a consultation and let us transform your windows into beautiful design elements that will enhance the beauty and functionality of your home."
     />
   </>
 );
