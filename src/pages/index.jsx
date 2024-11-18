@@ -15,6 +15,7 @@ import IMG9 from "../assets/images/index/IMG_0012.jpeg";
 import IMG10 from "../assets/images/index/IMG_0013.jpeg";
 import IMG11 from "../assets/images/index/IMG_0651.jpeg";
 import LOGO from "../assets/images/logo/SOTA.png";
+import RS_LOGO from "../assets/images/index/AUTHORIZED_DEALER_LOGO.png";
 import Services from "../components/Services/Services";
 
 export default function Home() {
@@ -144,6 +145,12 @@ export default function Home() {
           <div className="consult__head text-center">
             <h3>FREE CONSULTATION</h3>
             <span>Schedule your free consultation today!</span>
+            <div class="sota-logo sota-logo--consult">
+              <img
+                src={RS_LOGO}
+                alt="SOTA Window Coverings logo"
+              />
+            </div>
           </div>
           <div className="divider"></div>
           <Alert className="my-4 text-center" show={show} variant={variant}>
@@ -245,6 +252,32 @@ export default function Home() {
         </div>
       </div>
 
+      <div className="row m-0 section section--light">
+        <div className="col-lg-8 d-flex flex-column justify-content-center order-2">
+          <div className="section__desc">
+            <h2>Authorized RS Shutter Manufacturing Dealer</h2>
+            <p>
+              As an authorized dealer for RS Shutter Manufacturing, we offer
+              locally made, premium plantation shutters with fast delivery and
+              exceptional quality. Our partnership ensures you receive custom
+              poly or wood shutters, crafted to your exact specifications, with
+              the reliability and expertise of a trusted local manufacturer.
+            </p>
+            <Link className="button button--light" to="/contact">
+              GET A FREE QUOTE
+            </Link>
+          </div>
+        </div>
+        <div className="col-lg-4 d-flex justify-content-center align-items-center p-0">
+          <img
+            src={RS_LOGO}
+            width="100%"
+            height="100%"
+            alt="Plantation Shutters"
+          />
+        </div>
+      </div>
+
       <div className="row m-0 section section--dark">
         <div className="col-lg-4 d-flex justify-content-center align-items-center p-0">
           <img
@@ -259,13 +292,14 @@ export default function Home() {
             <h2>WHO WE ARE</h2>
             <span className="section__name">SOTA Window Coverings</span>
             <p>
-              We are a small, family owned business that provides professional
-              window treatment services for homes and businesses in Delray Beach
-              and surrounding areas. For over 15 years, we have been committed
-              to providing the best service possible.
+              SOTA Window Coverings is a family-owned business, proudly serving
+              homes and businesses in Delray Beach and the surrounding areas.
+              With over 20 years of experience, we are dedicated to delivering
+              exceptional, personalized window treatment solutions, always
+              committed to providing the highest level of service and quality.
             </p>
-            <Link className="button button--dark" to="/gallery">
-              SEE GALLERY
+            <Link className="button button--dark" to="/contact">
+              GET A FREE QUOTE
             </Link>
           </div>
         </div>
@@ -277,12 +311,14 @@ export default function Home() {
             <h2>WE'VE GOT YOU COVERED</h2>
             <span className="section__name">Licensed & Insured</span>
             <p>
-              Get your windows done with confidence as we are fully licensed and
-              insured. Our specializations include Plantation Shutters (Poly &
-              Wood) and Shades (Solar & Motorization).
+              Rest easy knowing your window treatments are in the hands of a
+              fully licensed and insured team. We specialize in custom
+              plantation shutters (Poly and Wood) as well as a wide range of
+              shades, including solar and motorized options, ensuring you get
+              the perfect solution for your home or business.
             </p>
-            <Link className="button button--light" to="/gallery">
-              SEE GALLERY
+            <Link className="button button--light" to="/contact">
+              GET A FREE QUOTE
             </Link>
           </div>
         </div>
